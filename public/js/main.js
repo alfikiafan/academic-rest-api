@@ -285,7 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (response.ok) {
                     M.toast({ html: result.message, classes: 'green' });
                     fetchMataKuliah();
-                    fetchMahasiswa(); // Update mata kuliah di mahasiswa
+                    fetchMahasiswa();
                     const modalInstance = M.Modal.getInstance(modal);
                     modalInstance.close();
                 } else {

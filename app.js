@@ -7,8 +7,6 @@ const errorHandler = require('./middleware/errorHandler');
 const mahasiswaRoutes = require('./routes/mahasiswaRoutes');
 const mataKuliahRoutes = require('./routes/mataKuliahRoutes');
 
-const soapServer = require('./services/soapService');
-
 const app = express();
 
 // Middleware
@@ -28,7 +26,3 @@ const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
     console.log(`REST API is running at http://localhost:${PORT}`);
 });
-
-// Start SOAP API Server on port 8001
-const SOAP_PORT = process.env.SOAP_PORT || 8001;
-soapServer(SOAP_PORT);
