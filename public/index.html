@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Akademik</title>
+    <!-- Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <nav>
+        <div class="nav-wrapper teal">
+            <a href="#" class="brand-logo center">Dashboard Akademik</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Mahasiswa Section -->
+        <section class="section">
+            <h4>Daftar Mahasiswa</h4>
+            <a id="addMahasiswaBtn" class="waves-effect waves-light btn modal-trigger teal">
+                <i class="material-icons left">add</i>Tambah Mahasiswa
+            </a>
+            <table class="highlight responsive-table" id="mahasiswaTable">
+                <thead>
+                    <tr>
+                        <th>NIM</th>
+                        <th>Nama</th>
+                        <th>Alamat</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data Mahasiswa akan diisi di sini -->
+                </tbody>
+            </table>
+        </section>
+        
+        <!-- Modal untuk menampilkan Mata Kuliah -->
+        <div id="modalMataKuliah" class="modal">
+            <div class="modal-content">
+                <h4 id="modalTitleMataKuliah">Mata Kuliah yang Diambil</h4>
+                <ul id="mataKuliahList" class="collection">
+                    <!-- Daftar mata kuliah akan diisi di sini -->
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Tutup</a>
+            </div>
+        </div>        
+
+        <!-- Mata Kuliah Section -->
+        <section class="section">
+            <h4>Daftar Mata Kuliah</h4>
+            <a id="addMataKuliahBtn" class="waves-effect waves-light btn modal-trigger teal">
+                <i class="material-icons left">add</i>Tambah Mata Kuliah
+            </a>
+            <table class="highlight responsive-table" id="mataKuliahTable">
+                <thead>
+                    <tr>
+                        <th>Kode Mata Kuliah</th>
+                        <th>Nama Mata Kuliah</th>
+                        <th>SKS</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data Mata Kuliah akan diisi di sini -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Modal Template -->
+        <!-- Modal Structure -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <h4 id="modalTitle">Modal Title</h4>
+                <div id="modalContent">
+                    <!-- Form akan diisi di sini -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
+                <a href="#!" class="waves-effect waves-green btn teal" id="modalSaveBtn">Save</a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

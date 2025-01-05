@@ -1,0 +1,31 @@
+.section {
+    padding: 20px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.mdl-dialog {
+    border: none;
+    border-radius: 8px;
+}
+
+.mdl-dialog__content {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.mdl-dialog__actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.label-group {
+    margin-top: 20px;
+}
+
+#mahasiswaTable tbody tr {
+    cursor: pointer;
+}
+
